@@ -1,0 +1,27 @@
+GridLayout:
+    rows:3
+    cols:1
+    BoxLayout:
+        TextInput:
+            id: input_number
+            text: ''
+            size_hint_x: None
+            width: 600
+        GridLayout:
+            rows:2
+            cols:1
+            Button:
+                text: 'Up'
+                on_press: app.Up()
+            Button:
+                text: 'Down'
+                on_press: app.Down()
+    BoxLayout:
+        Button:
+            text: 'Convert m to km'
+            on_press: app.Convert()
+    BoxLayout:
+        Label:
+            text: 'Enter a number'
+            color: (1, 1, 0, 1)
+            id: output_label
